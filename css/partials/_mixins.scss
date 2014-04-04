@@ -1,9 +1,9 @@
 // Mixins
 
-@mixin aa-text {
+%aa-text {
   -webkit-font-smoothing: antialiased;
 }
 
-@mixin no-aa-text {
+%no-aa-text {
   -webkit-font-smoothing: subpixel-antialiased;
 }

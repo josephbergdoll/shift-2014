@@ -66,7 +66,20 @@ table {
   padding: 1rem 3rem;
   border-radius: 0.2rem;
   background: #aaa;
-  margin-right: 0.5rem; }
+  margin-right: 0.5rem;
+  text-align: center;
+  font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.button-purchase {
+  background: white;
+  width: 50%; }
+
+.button-hollow {
+  border: 2px solid black;
+  background: transparent;
+  padding: 1rem 2rem; }
 
 body, html {
   margin: 0;
@@ -120,7 +133,7 @@ img {
   height: 0; }
 
 strong {
-  font-weight: 800;
+  font-weight: 700;
   font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased; }
 

@@ -4,4 +4,20 @@
 	border-radius: 0.2rem;
 	background: #aaa;
 	margin-right: 0.5rem;
+	text-align: center;
+	font-family: $sans;
+	text-transform: uppercase;
+	font-weight: $bold;
+	@extend %aa-text;
+}
+
+.button-purchase {
+	background: white;
+	width: 50%;
+}
+
+.button-hollow {
+	border: 2px solid black;
+	background: transparent;
+	padding: 1rem 2rem;
 }
