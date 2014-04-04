@@ -3,6 +3,7 @@
 @import "neat/neat";
 @import "partials/_variables";
 @import "partials/_mixins";
+@import "partials/_styleguide";
 @import "partials/_base";
 
 
@@ -33,4 +34,22 @@ header, section, footer {
 
 .block-fifth {
 	@include span-columns(2.4 of 12);
+}
+
+.top-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.top-photo {
+	background: #ddd;
+	height: 80%;
+	position: relative;
+}
+
+.project-hero {
+	margin-top: 15%;
+	@include shift(6);
 }

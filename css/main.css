@@ -61,6 +61,13 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 0.2rem;
+  background: #aaa;
+  margin-right: 0.5rem; }
+
 body, html {
   margin: 0;
   padding: 0; }
@@ -75,7 +82,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   width: 100%;
-  height: auto;
+  height: 100%;
   font-family: Sans-Serif;
   -webkit-tap-highlight-color: black;
   background: white;
@@ -164,7 +171,7 @@ header, section, footer {
 
 .wrapper {
   *zoom: 1;
-  max-width: 87.5em;
+  max-width: 112.5em;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -206,3 +213,18 @@ header, section, footer {
   width: 17.36981%; }
   .block-fifth:last-child {
     margin-right: 0; }
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+.top-photo {
+  background: #ddd;
+  height: 80%;
+  position: relative; }
+
+.project-hero {
+  margin-top: 15%;
+  margin-left: 51.64387%; }
