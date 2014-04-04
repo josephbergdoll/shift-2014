@@ -45,11 +45,15 @@ header, section, footer {
 
 .top-photo {
 	background: #ddd;
-	height: 80%;
+	height: 88%;
 	position: relative;
 }
 
 .project-hero {
-	margin-top: 15%;
+	margin-top: 20%;
 	@include shift(6);
+}
+
+.buttons {
+	margin-top: 1rem;
 }

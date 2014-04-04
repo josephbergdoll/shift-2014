@@ -1,23 +1,70 @@
 .button {
 	display: inline-block;
-	padding: 1rem 3rem;
-	border-radius: 0.2rem;
+	padding: 1.25rem 3rem;
 	background: #aaa;
 	margin-right: 0.5rem;
 	text-align: center;
 	font-family: $sans;
 	text-transform: uppercase;
 	font-weight: $bold;
+	font-size: 0.7em;
 	@extend %aa-text;
+	letter-spacing: 0.1em;
 }
 
 .button-purchase {
 	background: white;
 	width: 50%;
+	border: 2px solid white;
+	@include transition($hover-speed all ease-out);
+	&:hover {
+		background: rgba(255,255,255,0.75);
+		color: #333;
+	}
 }
 
 .button-hollow {
 	border: 2px solid black;
 	background: transparent;
-	padding: 1rem 2rem;
+	padding: 1.25rem 1.5rem;
+	@include transition($hover-speed all ease-out);
+	&:hover {
+	background: rgba(0,0,0,0.07);
+	color: #222;
+	}
+}
+
+%nav-gotham {
+	font-family: $sans;
+	font-weight: $bold;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+}
+
+
+h1 {
+  font-family: $serif;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: $serif;
+  font-weight: $medium;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: $sans;
+  font-weight: $light;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.68em;
+}
+
+p {
+  font-family: $serif;
+  font-weight: $book;
+  font-size: 1.05em;
+  line-height: 1.7;
 }

@@ -64,7 +64,7 @@ img {
 strong {
   font-weight: $bold;
   font-family: $sans;
-  @include aa-text;
+  @extend %aa-text;
 }
 
 em {
@@ -90,31 +90,6 @@ a {
   overflow: hidden;
 }
 
-
-h1 {
-  font-family: $serif;
-  font-size: 45px;
-  border-bottom: 1px solid black;
+.nav a {
+  @extend %nav-gotham;
 }
-
-h2 {
-  font-family: $serif;
-  font-weight: $medium;
-  font-size: 27px;
-}
-
-h3 {
-  font-family: $sans;
-  font-weight: $light;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-p {
-  font-family: $serif;
-  font-weight: $book;
-  font-size: 17px;
-  line-height: 1.7;
-}
-
