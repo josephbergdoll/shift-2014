@@ -1,6 +1,8 @@
 @import "partials/_reset";
 @import "bourbon";
 @import "neat/neat";
+@import "partials/_variables";
+@import "partials/_mixins";
 @import "partials/_base";
 
 
@@ -15,4 +17,20 @@ header, section, footer {
   @include outer-container;
   width: 90%;
   padding: 2rem 2rem;
+}
+
+.block-half {
+	@include span-columns(6 of 12);
+}
+
+.block-third {
+	@include span-columns(4 of 12);
+}
+
+.block-fourth {
+	@include span-columns(3 of 12);
+}
+
+.block-fifth {
+	@include span-columns(2.4 of 12);
 }

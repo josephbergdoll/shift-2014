@@ -78,15 +78,13 @@ body {
   height: auto;
   font-family: Sans-Serif;
   -webkit-tap-highlight-color: black;
-  background: black;
-  color: white; }
+  background: white;
+  color: black; }
 
 ::selection {
-  background: #bf1e2e;
   color: white; }
 
 ::-moz-selection {
-  background: #bf1e2e;
   color: white; }
 
 * {
@@ -139,7 +137,8 @@ a {
 
 h1 {
   font-family: "Adobe Caslon Pro", Georgia, serif;
-  font-size: 45px; }
+  font-size: 45px;
+  border-bottom: 1px solid black; }
 
 h2 {
   font-family: "Adobe Caslon Pro", Georgia, serif;
@@ -150,6 +149,7 @@ h3 {
   font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 200;
   letter-spacing: 0.2rem;
+  text-transform: uppercase;
   font-size: 11px; }
 
 p {
@@ -164,7 +164,7 @@ header, section, footer {
 
 .wrapper {
   *zoom: 1;
-  max-width: 68em;
+  max-width: 87.5em;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -174,3 +174,35 @@ header, section, footer {
     display: table; }
   .wrapper:after {
     clear: both; }
+
+.block-half {
+  float: left;
+  display: block;
+  margin-right: 3.28774%;
+  width: 48.35613%; }
+  .block-half:last-child {
+    margin-right: 0; }
+
+.block-third {
+  float: left;
+  display: block;
+  margin-right: 3.28774%;
+  width: 31.1415%; }
+  .block-third:last-child {
+    margin-right: 0; }
+
+.block-fourth {
+  float: left;
+  display: block;
+  margin-right: 3.28774%;
+  width: 22.53419%; }
+  .block-fourth:last-child {
+    margin-right: 0; }
+
+.block-fifth {
+  float: left;
+  display: block;
+  margin-right: 3.28774%;
+  width: 17.36981%; }
+  .block-fifth:last-child {
+    margin-right: 0; }
