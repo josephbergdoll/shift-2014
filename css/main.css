@@ -101,7 +101,7 @@ table {
 .nav a {
   font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-transform: uppercase; }
 
 h1 {
@@ -206,7 +206,7 @@ header, section, footer {
 
 .wrapper {
   *zoom: 1;
-  max-width: 112.5em;
+  max-width: 87.5em;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -249,20 +249,52 @@ header, section, footer {
   .block-fifth:last-child {
     margin-right: 0; }
 
+.logo {
+  display: block;
+  background: url("../img/logo_k.png") no-repeat top left;
+  width: 14rem;
+  height: 2.625rem;
+  background-size: 100%;
+  float: left; }
+
 .top-nav {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2; }
 
+.nav {
+  float: right; }
+
+.nav a {
+  display: inline-block;
+  padding: 0.6rem 1.25rem 0.45rem;
+  border: 2px solid transparent;
+  margin-right: -2px;
+  height: 2.625rem;
+  -webkit-transition: 200ms border ease-out;
+  -moz-transition: 200ms border ease-out;
+  transition: 200ms border ease-out; }
+  .nav a:last-child {
+    margin-right: 0; }
+  .nav a:hover {
+    border: 2px solid black; }
+
 .top-photo {
   background: #ddd;
   height: 88%;
-  position: relative; }
+  position: relative;
+  display: table; }
 
 .project-hero {
-  margin-top: 20%;
-  margin-left: 51.64387%; }
+  margin-top: 25%;
+  margin-right: 0;
+  float: right;
+  display: table-cell;
+  vertical-align: middle; }
+
+.project-hero h1 {
+  margin-bottom: 1rem; }
 
 .buttons {
   margin-top: 1rem; }

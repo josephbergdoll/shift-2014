@@ -21,39 +21,77 @@ header, section, footer {
 }
 
 .block-half {
-	@include span-columns(6 of 12);
+  @include span-columns(6 of 12);
 }
 
 .block-third {
-	@include span-columns(4 of 12);
+  @include span-columns(4 of 12);
 }
 
 .block-fourth {
-	@include span-columns(3 of 12);
+  @include span-columns(3 of 12);
 }
 
 .block-fifth {
-	@include span-columns(2.4 of 12);
+  @include span-columns(2.4 of 12);
+}
+
+.logo {
+  display: block;
+  background: url('../img/logo_k.png') no-repeat top left;
+  width: 14rem;
+  height: 2.625rem;
+  background-size: 100%;
+  float: left;
 }
 
 .top-nav {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
+.nav {
+  float: right;
+}
+
+.nav a {
+  @extend %nav-gotham;
+  display: inline-block;
+  padding: 0.6rem 1.25rem 0.45rem;
+  border: 2px solid transparent;
+  margin-right: -2px;
+  height: 2.625rem;
+  @include transition ($hover-speed border ease-out);
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    border: 2px solid black;
+  }
+}
+
+
 .top-photo {
-	background: #ddd;
-	height: 88%;
-	position: relative;
+  background: #ddd;
+  height: 88%;
+  position: relative;
+  display: table;
 }
 
 .project-hero {
-	margin-top: 20%;
-	@include shift(6);
+  margin-top: 25%;
+  margin-right: 0;
+  float: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.project-hero h1 {
+  margin-bottom: 1rem;
 }
 
 .buttons {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
