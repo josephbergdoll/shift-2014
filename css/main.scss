@@ -59,7 +59,7 @@ header, section, footer {
 .nav a {
   @extend %nav-gotham;
   display: inline-block;
-  padding: 0.6rem 1.25rem 0.45rem;
+  padding: 0.6rem 1.5rem 0.45rem;
   border: 2px solid transparent;
   margin-right: -2px;
   height: 2.625rem;
@@ -74,24 +74,33 @@ header, section, footer {
 
 
 .top-photo {
+  width: 95%;
+  margin:0 auto;
   background: #ddd;
-  height: 88%;
+  height: 100%;
   position: relative;
   display: table;
 }
 
 .project-hero {
-  margin-top: 25%;
   margin-right: 0;
+  margin-top: 35%;
   float: right;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .project-hero h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  display:inline;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.25rem;
+  &:after {
+    content: " ";
+    display: block;
+    height: 1.5rem;
+    width: 100%;
+  }
 }
 
 .buttons {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }

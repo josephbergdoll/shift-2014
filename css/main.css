@@ -101,13 +101,13 @@ table {
 .nav a {
   font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase; }
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 h1 {
   font-family: "Adobe Caslon Pro", Georgia, serif;
-  font-size: 2em;
-  text-decoration: underline; }
+  font-size: 2em; }
 
 h2 {
   font-family: "Adobe Caslon Pro", Georgia, serif;
@@ -268,7 +268,7 @@ header, section, footer {
 
 .nav a {
   display: inline-block;
-  padding: 0.6rem 1.25rem 0.45rem;
+  padding: 0.6rem 1.5rem 0.45rem;
   border: 2px solid transparent;
   margin-right: -2px;
   height: 2.625rem;
@@ -281,20 +281,28 @@ header, section, footer {
     border: 2px solid black; }
 
 .top-photo {
+  width: 95%;
+  margin: 0 auto;
   background: #ddd;
-  height: 88%;
+  height: 100%;
   position: relative;
   display: table; }
 
 .project-hero {
-  margin-top: 25%;
   margin-right: 0;
-  float: right;
-  display: table-cell;
-  vertical-align: middle; }
+  margin-top: 35%;
+  float: right; }
 
 .project-hero h1 {
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem;
+  display: inline;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.25rem; }
+  .project-hero h1:after {
+    content: " ";
+    display: block;
+    height: 1.5rem;
+    width: 100%; }
 
 .buttons {
-  margin-top: 1rem; }
+  margin-top: 2rem; }

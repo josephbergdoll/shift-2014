@@ -37,15 +37,15 @@
 %nav-gotham {
 	font-family: $sans;
 	font-weight: $bold;
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 
 h1 {
   font-family: $serif;
   font-size: 2em;
-  text-decoration: underline;
 }
 
 h2 {
