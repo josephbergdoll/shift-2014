@@ -113,8 +113,8 @@ h2 {
 
 h3 {
   font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  letter-spacing: 0.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 0.68em; }
 
@@ -123,6 +123,14 @@ p {
   font-weight: 400;
   font-size: 1.05em;
   line-height: 1.7; }
+
+p a {
+  border-bottom: 1px solid #b9b9b9;
+  -webkit-transition: 200ms border-bottom ease-out;
+  -moz-transition: 200ms border-bottom ease-out;
+  transition: 200ms border-bottom ease-out; }
+  p a:hover {
+    border-bottom: 1px solid #888888; }
 
 body, html {
   margin: 0;
@@ -145,9 +153,11 @@ body {
   color: black; }
 
 ::selection {
+  background: #777;
   color: white; }
 
 ::-moz-selection {
+  background: #777;
   color: white; }
 
 * {
@@ -197,6 +207,13 @@ a {
   text-indent: 120%;
   white-space: nowrap;
   overflow: hidden; }
+
+.avatar {
+  display: block;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0 1rem; }
 
 header, section, footer {
   width: 100%;
@@ -304,3 +321,13 @@ header, section, footer {
 
 .buttons {
   margin-top: 2rem; }
+
+.participants div {
+  margin: 0 0 3rem; }
+.participants .avatar {
+  float: left;
+  margin-right: 1rem; }
+.participants h3 {
+  margin: 0.5rem 0 1rem; }
+.participants p {
+  font-size: 0.913em; }

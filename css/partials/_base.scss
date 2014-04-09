@@ -24,10 +24,12 @@ body {
 }
 
 ::selection {
+  background: #777;
   color: white;
 }
 
 ::-moz-selection {
+  background: #777;
   color: white;
 }
 
@@ -88,4 +90,12 @@ a {
   text-indent: 120%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.avatar {
+  display: block;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0 1rem;
 }
