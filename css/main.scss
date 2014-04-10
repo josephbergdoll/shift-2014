@@ -95,9 +95,9 @@ header, section, footer {
 
 .project-hero h1 {
   margin-bottom: 2rem;
+  line-height: 1.7;
+  padding-bottom: 0.2rem;
   display:inline;
-  border-bottom: 2px solid $gray-lighter-opacity;
-  padding-bottom: 0.15rem;
   &:after {
     content: " ";
     display: block;
@@ -112,18 +112,27 @@ header, section, footer {
 
 // Participants
 
+.story {
+  @include span-columns(6 of 12);
+}
+
 .participants {
+  @include span-columns(4 of 12);
+  @include shift(2);
   div {
     margin: 0 0 3rem;
+    padding: 0 0 0 4.5rem;
+    position: relative;
+    h3 {
+      margin: 0.5rem 0 0.75rem;
+    }
   }
   .avatar {
-    float: left;
-    margin-right: 1rem;
-  }
-  h3 {
-    margin: 0.5rem 0 1rem;
+    position: absolute;
+    left: 0;
+
   }
   p {
-    font-size: 0.913em;
+    font-size: 0.875em;
   }
 }

@@ -104,7 +104,12 @@ table {
 
 h1 {
   font-family: "Adobe Caslon Pro", Georgia, serif;
-  font-size: 2em; }
+  font-size: 2em;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.35);
+  line-height: 1.2;
+  padding-bottom: 0rem;
+  display: table;
+  margin-bottom: 2rem; }
 
 h2 {
   font-family: "Adobe Caslon Pro", Georgia, serif;
@@ -116,13 +121,18 @@ h3 {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 0.68em; }
+  h3.subhead {
+    margin-bottom: 1rem; }
 
 p {
   font-family: "Adobe Caslon Pro", Georgia, serif;
   font-weight: 400;
-  font-size: 1.05em;
+  font-size: 1.1em;
   line-height: 1.7;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 1rem; }
+  p:last-child {
+    margin-bottom: 0; }
 
 p a {
   border-bottom: 1px solid #b9b9b9;
@@ -211,8 +221,8 @@ a {
 .avatar {
   display: block;
   border-radius: 100%;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin: 0 0 1rem; }
 
 header, section, footer {
@@ -314,9 +324,9 @@ header, section, footer {
 
 .project-hero h1 {
   margin-bottom: 2rem;
-  display: inline;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.35);
-  padding-bottom: 0.15rem; }
+  line-height: 1.7;
+  padding-bottom: 0.2rem;
+  display: inline; }
   .project-hero h1:after {
     content: " ";
     display: block;
@@ -326,12 +336,30 @@ header, section, footer {
 .buttons {
   margin-top: 2rem; }
 
-.participants div {
-  margin: 0 0 3rem; }
-.participants .avatar {
+.story {
   float: left;
-  margin-right: 1rem; }
-.participants h3 {
-  margin: 0.5rem 0 1rem; }
-.participants p {
-  font-size: 0.913em; }
+  display: block;
+  margin-right: 3.28774%;
+  width: 48.35613%; }
+  .story:last-child {
+    margin-right: 0; }
+
+.participants {
+  float: left;
+  display: block;
+  margin-right: 3.28774%;
+  width: 31.1415%;
+  margin-left: 17.21462%; }
+  .participants:last-child {
+    margin-right: 0; }
+  .participants div {
+    margin: 0 0 3rem;
+    padding: 0 0 0 4.5rem;
+    position: relative; }
+    .participants div h3 {
+      margin: 0.5rem 0 0.75rem; }
+  .participants .avatar {
+    position: absolute;
+    left: 0; }
+  .participants p {
+    font-size: 0.875em; }
