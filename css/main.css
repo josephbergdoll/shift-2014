@@ -340,7 +340,8 @@ header, section, footer {
   float: left;
   display: block;
   margin-right: 3.28774%;
-  width: 48.35613%; }
+  width: 48.35613%;
+  margin-left: 17.21462%; }
   .story:last-child {
     margin-right: 0; }
 
@@ -348,8 +349,7 @@ header, section, footer {
   float: left;
   display: block;
   margin-right: 3.28774%;
-  width: 31.1415%;
-  margin-left: 17.21462%; }
+  width: 31.1415%; }
   .participants:last-child {
     margin-right: 0; }
   .participants div {
