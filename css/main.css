@@ -420,8 +420,14 @@ header, section, footer {
 .posters li {
   display: inline-block;
   height: 32rem;
-  width: 21.33rem;
   margin-right: 0.5rem; }
+  .posters li:last-child {
+    margin-right: 0; }
+  .posters li img {
+    width: 21.33rem;
+    margin-right: 0.5rem; }
+    .posters li img:last-child {
+      margin-right: 0; }
 
 .exhibition-images img {
   margin-bottom: 1.5rem; }

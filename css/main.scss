@@ -192,9 +192,16 @@ header, section, footer {
 .posters li {
   display: inline-block;
   height: 32rem;
-  width: 21.33rem;
   margin-right: 0.5rem;
+  &:last-child {
+    margin-right: 0;
+  }
   img {
+    width: 21.33rem;
+    margin-right: 0.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
