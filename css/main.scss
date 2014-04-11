@@ -112,26 +112,29 @@ header, section, footer {
 
 // Participants
 
-.story {
-  @include span-columns(6 of 12);
-    @include shift(2);
+.right-grid-headline {
+  @include shift(6);
 }
 
-.participants {
-  @include span-columns(4 of 12);
+.story {
+  @include span-columns(6 of 12);
+  @include shift(2);
+}
 
-  div {
-    margin: 0 0 3rem;
-    padding: 0 0 0 4.5rem;
-    position: relative;
-    h3 {
-      margin: 0.5rem 0 0.75rem;
-    }
+.sub-info {
+  @include span-columns(4 of 12);
+}
+
+.person {
+  margin: 0 0 3rem;
+  padding: 0 0 0 4.5rem;
+  position: relative;
+  h3 {
+    margin: 0.5rem 0 0.75rem;
   }
-  .avatar {
+   .avatar {
     position: absolute;
     left: 0;
-
   }
   p {
     font-size: 0.875em;

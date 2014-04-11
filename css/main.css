@@ -122,7 +122,7 @@ h3 {
   text-transform: uppercase;
   font-size: 0.68em; }
   h3.subhead {
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
 
 p {
   font-family: "Adobe Caslon Pro", Georgia, serif;
@@ -336,6 +336,9 @@ header, section, footer {
 .buttons {
   margin-top: 2rem; }
 
+.right-grid-headline {
+  margin-left: 51.64387%; }
+
 .story {
   float: left;
   display: block;
@@ -345,21 +348,22 @@ header, section, footer {
   .story:last-child {
     margin-right: 0; }
 
-.participants {
+.sub-info {
   float: left;
   display: block;
   margin-right: 3.28774%;
   width: 31.1415%; }
-  .participants:last-child {
+  .sub-info:last-child {
     margin-right: 0; }
-  .participants div {
-    margin: 0 0 3rem;
-    padding: 0 0 0 4.5rem;
-    position: relative; }
-    .participants div h3 {
-      margin: 0.5rem 0 0.75rem; }
-  .participants .avatar {
+
+.person {
+  margin: 0 0 3rem;
+  padding: 0 0 0 4.5rem;
+  position: relative; }
+  .person h3 {
+    margin: 0.5rem 0 0.75rem; }
+  .person .avatar {
     position: absolute;
     left: 0; }
-  .participants p {
+  .person p {
     font-size: 0.875em; }
