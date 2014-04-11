@@ -90,7 +90,7 @@ p {
 }
 
 p a {
-  border-bottom: 1px solid $gray-lightest;
+  border-bottom: 1px solid $gray-superlight;
   @include transition($hover-speed border-bottom ease-out);
   &:hover {
     border-bottom: 1px solid $gray-light;

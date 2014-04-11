@@ -17,7 +17,7 @@ header, section, footer {
 .wrapper {
   @include outer-container;
   width: 90%;
-  padding: 2rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .block-half {
@@ -52,22 +52,28 @@ header, section, footer {
   z-index: 2;
   opacity: 1;
   background: transparent;
+  .wrapper {
+    padding: 2rem 2rem;
+  }
   &.pre-fixed {
     opacity: 0;
     background: white;
     position: fixed;
     pointer-events: none;
+    @include transform(translateY(-15%));
     .wrapper {
       padding: 0.5rem 2rem;
+      @include transition(0s all linear 0s);
     }
   }
   &.addtransitions {
-    @include transition($hover-speed opacity ease-out);
+    @include transition($hover-speed all ease-out);
   }
   &.fixed {
     opacity: 1;
     pointer-events: auto;
-    @include transition($short-transition opacity ease-out);
+    @include transition($short-transition all ease-out);
+    @include transform(rotateX(0deg) translateY(0));
   }
 }
 
@@ -103,7 +109,8 @@ header, section, footer {
 .top-photo {
   width: 95%;
   margin:0 auto;
-  background: #ddd;
+  background: url('../img/hero.jpg') no-repeat center center;
+  background-size: cover;
   height: 100%;
   position: relative;
   display: table;
@@ -111,7 +118,7 @@ header, section, footer {
 
 .project-hero {
   margin-right: 0;
-  margin-top: 35%;
+  margin-top: 30%;
   float: right;
 }
 
@@ -178,7 +185,8 @@ header, section, footer {
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   left: 0;
-  padding: 0 2.5% 2.5rem;
+  top: 0;
+  padding: 7rem 2.5% 4.9rem;
 }
 
 .posters li {
@@ -198,5 +206,41 @@ header, section, footer {
   }
   .project-caption {
      margin-top: -1rem;
+  }
+}
+
+// Footer
+
+footer {
+  .wrapper {
+    &:before {
+      content: " ";
+      display: block;
+      height: 0;
+      width: 100%;
+      border-top: 1px solid $gray-superlight;
+    }
+  }
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-link {
+  @extend %thin-gotham;
+  font-size: 0.6em;
+  color: $gray-lightest;
+  display: inline-block;
+  margin: 2rem 2% 3rem 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+a.footer-link {
+  @include transition($hover-speed color ease-out);
+  &:hover {
+    color: black;
   }
 }

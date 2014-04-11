@@ -10,6 +10,6 @@ $(document).ready(function(){
 
   $('#about').waypoint(function(direction) {
     $('.top-nav').toggleClass('fixed');
-  }, { offset: 58 });
+  }, { offset: 116 });
 
 });
