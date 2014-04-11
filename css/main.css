@@ -102,6 +102,13 @@ table {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+.project-caption {
+  font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
 h1 {
   font-family: "Adobe Caslon Pro", Georgia, serif;
   font-size: 2em;
@@ -141,6 +148,9 @@ p a {
   transition: 200ms border-bottom ease-out; }
   p a:hover {
     border-bottom: 1px solid #888888; }
+
+.project-caption {
+  color: #888888; }
 
 body, html {
   margin: 0;
@@ -245,32 +255,32 @@ header, section, footer {
 .block-half {
   float: left;
   display: block;
-  margin-right: 3.28774%;
-  width: 48.35613%; }
+  margin-right: 4.82905%;
+  width: 47.58547%; }
   .block-half:last-child {
     margin-right: 0; }
 
 .block-third {
   float: left;
   display: block;
-  margin-right: 3.28774%;
-  width: 31.1415%; }
+  margin-right: 4.82905%;
+  width: 30.11397%; }
   .block-third:last-child {
     margin-right: 0; }
 
 .block-fourth {
   float: left;
   display: block;
-  margin-right: 3.28774%;
-  width: 22.53419%; }
+  margin-right: 4.82905%;
+  width: 21.37821%; }
   .block-fourth:last-child {
     margin-right: 0; }
 
 .block-fifth {
   float: left;
   display: block;
-  margin-right: 3.28774%;
-  width: 17.36981%; }
+  margin-right: 4.82905%;
+  width: 16.13676%; }
   .block-fifth:last-child {
     margin-right: 0; }
 
@@ -286,7 +296,16 @@ header, section, footer {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2; }
+  z-index: 2;
+  background: transparent;
+  -webkit-transition: 400ms background ease-out;
+  -moz-transition: 400ms background ease-out;
+  transition: 400ms background ease-out; }
+  .top-nav.fixed {
+    position: fixed;
+    background: white; }
+    .top-nav.fixed .wrapper {
+      padding: 0.5rem 2rem; }
 
 .nav {
   float: right; }
@@ -337,24 +356,10 @@ header, section, footer {
   margin-top: 2rem; }
 
 .right-grid-headline {
-  margin-left: 51.64387%; }
-
-.story {
-  float: left;
-  display: block;
-  margin-right: 3.28774%;
-  width: 48.35613%; }
-  .story:last-child {
-    margin-right: 0; }
+  margin-left: 52.41453%; }
 
 .sub-info {
-  float: left;
-  display: block;
-  margin-right: 3.28774%;
-  width: 31.1415%;
-  margin-left: 17.21462%; }
-  .sub-info:last-child {
-    margin-right: 0; }
+  margin-left: 17.47151%; }
 
 .person {
   margin: 0 0 3rem;
@@ -372,7 +377,7 @@ header, section, footer {
   background: #f9f9f9;
   position: relative; }
   .section-posters .wrapper {
-    height: 39rem; }
+    height: 44rem; }
 
 .posters {
   position: absolute;
@@ -381,12 +386,15 @@ header, section, footer {
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   left: 0;
-  padding: 0 2.5% 0.5rem; }
+  padding: 0 2.5% 2.5rem; }
 
 .posters li {
   display: inline-block;
-  height: 30rem;
-  width: 20rem; }
-  .posters li img {
-    height: 30rem;
-    width: auto; }
+  height: 32rem;
+  width: 21.33rem;
+  margin-right: 0.5rem; }
+
+.exhibition-images img {
+  margin-bottom: 1.5rem; }
+.exhibition-images .project-caption {
+  margin-top: -1rem; }

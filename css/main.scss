@@ -50,6 +50,16 @@ header, section, footer {
   top: 0;
   left: 0;
   z-index: 2;
+  background: transparent;
+  @include transition($short-transition background ease-out);
+  &.fade {}
+  &.fixed {
+    position: fixed;
+    background: white;
+    .wrapper {
+      padding: 0.5rem 2rem;
+    }
+  }
 }
 
 .nav {
@@ -117,11 +127,9 @@ header, section, footer {
 }
 
 .story {
-  @include span-columns(6 of 12);
 }
 
 .sub-info {
-  @include span-columns(4 of 12);
   @include shift(2);
 }
 
@@ -147,7 +155,7 @@ header, section, footer {
   background: #f9f9f9;
   position: relative;
   .wrapper {
-    height: 39rem;
+    height: 44rem;
   }
 }
 
@@ -158,15 +166,25 @@ header, section, footer {
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   left: 0;
-  padding: 0 2.5% 0.5rem;
+  padding: 0 2.5% 2.5rem;
 }
 
 .posters li {
   display: inline-block;
-  height: 30rem;
-  width: 20rem;
+  height: 32rem;
+  width: 21.33rem;
+  margin-right: 0.5rem;
   img {
-    height: 30rem;
-    width: auto;
+  }
+}
+
+// Exhibition
+
+.exhibition-images {
+  img {
+    margin-bottom: 1.5rem;
+  }
+  .project-caption {
+     margin-top: -1rem;
   }
 }

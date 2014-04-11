@@ -42,6 +42,14 @@
   letter-spacing: 1px;
 }
 
+%thin-gotham {
+  font-family: $sans;
+  font-weight: $book;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 
 h1 {
   font-family: $serif;
@@ -87,4 +95,9 @@ p a {
   &:hover {
     border-bottom: 1px solid $gray-light;
   }
+}
+
+.project-caption {
+ @extend %thin-gotham;
+ color: $gray-light;
 }
