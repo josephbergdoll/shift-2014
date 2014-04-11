@@ -50,15 +50,24 @@ header, section, footer {
   top: 0;
   left: 0;
   z-index: 2;
+  opacity: 1;
   background: transparent;
-  @include transition($short-transition background ease-out);
-  &.fade {}
-  &.fixed {
-    position: fixed;
+  &.pre-fixed {
+    opacity: 0;
     background: white;
+    position: fixed;
+    pointer-events: none;
     .wrapper {
       padding: 0.5rem 2rem;
     }
+  }
+  &.addtransitions {
+    @include transition($hover-speed opacity ease-out);
+  }
+  &.fixed {
+    opacity: 1;
+    pointer-events: auto;
+    @include transition($short-transition opacity ease-out);
   }
 }
 
@@ -76,6 +85,9 @@ header, section, footer {
   @include transition ($hover-speed all ease-out);
   &:last-child {
     margin-right: 0;
+  }
+  &.current {
+    border: 2px solid $gray-superlight;
   }
   &:hover {
     border: 2px solid black;

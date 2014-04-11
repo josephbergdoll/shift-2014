@@ -297,15 +297,25 @@ header, section, footer {
   top: 0;
   left: 0;
   z-index: 2;
-  background: transparent;
-  -webkit-transition: 400ms background ease-out;
-  -moz-transition: 400ms background ease-out;
-  transition: 400ms background ease-out; }
-  .top-nav.fixed {
+  opacity: 1;
+  background: transparent; }
+  .top-nav.pre-fixed {
+    opacity: 0;
+    background: white;
     position: fixed;
-    background: white; }
-    .top-nav.fixed .wrapper {
+    pointer-events: none; }
+    .top-nav.pre-fixed .wrapper {
       padding: 0.5rem 2rem; }
+  .top-nav.addtransitions {
+    -webkit-transition: 200ms opacity ease-out;
+    -moz-transition: 200ms opacity ease-out;
+    transition: 200ms opacity ease-out; }
+  .top-nav.fixed {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transition: 400ms opacity ease-out;
+    -moz-transition: 400ms opacity ease-out;
+    transition: 400ms opacity ease-out; }
 
 .nav {
   float: right; }
@@ -321,6 +331,8 @@ header, section, footer {
   transition: 200ms all ease-out; }
   .nav a:last-child {
     margin-right: 0; }
+  .nav a.current {
+    border: 2px solid #dddddd; }
   .nav a:hover {
     border: 2px solid black; }
   .nav a:active {
