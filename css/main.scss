@@ -118,11 +118,11 @@ header, section, footer {
 
 .story {
   @include span-columns(6 of 12);
-  @include shift(2);
 }
 
 .sub-info {
   @include span-columns(4 of 12);
+  @include shift(2);
 }
 
 .person {
@@ -138,5 +138,35 @@ header, section, footer {
   }
   p {
     font-size: 0.875em;
+  }
+}
+
+// Posters 
+
+.section-posters {
+  background: #f9f9f9;
+  position: relative;
+  .wrapper {
+    height: 39rem;
+  }
+}
+
+.posters {
+  position: absolute;
+  width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  left: 0;
+  padding: 0 2.5% 0.5rem;
+}
+
+.posters li {
+  display: inline-block;
+  height: 30rem;
+  width: 20rem;
+  img {
+    height: 30rem;
+    width: auto;
   }
 }

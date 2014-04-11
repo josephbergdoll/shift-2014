@@ -343,8 +343,7 @@ header, section, footer {
   float: left;
   display: block;
   margin-right: 3.28774%;
-  width: 48.35613%;
-  margin-left: 17.21462%; }
+  width: 48.35613%; }
   .story:last-child {
     margin-right: 0; }
 
@@ -352,7 +351,8 @@ header, section, footer {
   float: left;
   display: block;
   margin-right: 3.28774%;
-  width: 31.1415%; }
+  width: 31.1415%;
+  margin-left: 17.21462%; }
   .sub-info:last-child {
     margin-right: 0; }
 
@@ -367,3 +367,26 @@ header, section, footer {
     left: 0; }
   .person p {
     font-size: 0.875em; }
+
+.section-posters {
+  background: #f9f9f9;
+  position: relative; }
+  .section-posters .wrapper {
+    height: 39rem; }
+
+.posters {
+  position: absolute;
+  width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  left: 0;
+  padding: 0 2.5% 0.5rem; }
+
+.posters li {
+  display: inline-block;
+  height: 30rem;
+  width: 20rem; }
+  .posters li img {
+    height: 30rem;
+    width: auto; }
