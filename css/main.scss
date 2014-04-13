@@ -207,16 +207,12 @@ header, section, footer {
   .info-button {
     display: block;
     position: absolute;
-    top: -2rem;
-    right: 0;
-    @extend %nav-gotham;
-    text-transform: none;
-    padding: 0.2rem 0.45rem;
-    line-height: 1.2;
-    text-align: center;
-    text-indent: 1px;
-    border: 2px solid black;
-    opacity: 0.2;
+    top: 0.5rem;
+    right: 0.5rem;
+    @include transition($hover-speed opacity ease-out);
+    &:hover {
+      opacity: 0.75;
+    }
   }
   .poster-info {
     position: absolute;

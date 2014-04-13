@@ -95,7 +95,7 @@ table {
     background: rgba(0, 0, 0, 0.07);
     color: #222; }
 
-.nav a, .posters li .info-button {
+.nav a {
   font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
@@ -432,15 +432,13 @@ header, section, footer {
   .posters li .info-button {
     display: block;
     position: absolute;
-    top: -2rem;
-    right: 0;
-    text-transform: none;
-    padding: 0.2rem 0.45rem;
-    line-height: 1.2;
-    text-align: center;
-    text-indent: 1px;
-    border: 2px solid black;
-    opacity: 0.2; }
+    top: 0.5rem;
+    right: 0.5rem;
+    -webkit-transition: 200ms opacity ease-out;
+    -moz-transition: 200ms opacity ease-out;
+    transition: 200ms opacity ease-out; }
+    .posters li .info-button:hover {
+      opacity: 0.75; }
   .posters li .poster-info {
     position: absolute;
     display: block;
