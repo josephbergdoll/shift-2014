@@ -12,4 +12,9 @@ $(document).ready(function(){
     $('.top-nav').toggleClass('fixed');
   }, { offset: 116 });
 
+  $('.js-info-button').click(function(event){
+    event.preventDefault();
+    $(this).next('.poster-info').toggleClass('show');
+  });
+
 });

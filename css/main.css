@@ -95,7 +95,7 @@ table {
     background: rgba(0, 0, 0, 0.07);
     color: #222; }
 
-.nav a {
+.nav a, .posters li .info-button {
   font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
@@ -419,6 +419,7 @@ header, section, footer {
 
 .posters li {
   display: inline-block;
+  position: relative;
   height: 32rem;
   margin-right: 0.5rem; }
   .posters li:last-child {
@@ -426,8 +427,37 @@ header, section, footer {
   .posters li img {
     width: 21.33rem;
     margin-right: 0.5rem; }
-    .posters li img:last-child {
+    .posters li img:last-of-type {
       margin-right: 0; }
+  .posters li .info-button {
+    display: block;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    text-transform: none;
+    padding: 0.2rem 0.45rem;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 1px;
+    border: 2px solid black;
+    opacity: 0.2; }
+  .posters li .poster-info {
+    position: absolute;
+    display: block;
+    white-space: normal;
+    padding: 2rem 50% 2rem 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(249, 249, 249, 0.85);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3; }
+
+.show {
+  opacity: 1 !important;
+  visibility: visible !important; }
 
 .exhibition-images img {
   margin-bottom: 1.5rem; }
