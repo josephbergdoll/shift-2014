@@ -436,7 +436,8 @@ header, section, footer {
     right: 0.5rem;
     -webkit-transition: 200ms opacity ease-out;
     -moz-transition: 200ms opacity ease-out;
-    transition: 200ms opacity ease-out; }
+    transition: 200ms opacity ease-out;
+    z-index: 100; }
     .posters li .info-button:hover {
       opacity: 0.75; }
   .posters li .poster-info {
