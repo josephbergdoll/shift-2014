@@ -147,7 +147,7 @@ p {
     font-size: 0.875em; }
 
 p a {
-  border-bottom: 1.1px solid #cccccc;
+  border-bottom: 1.1px solid #dddddd;
   -webkit-transition: 200ms border-bottom ease-out;
   -moz-transition: 200ms border-bottom ease-out;
   transition: 200ms border-bottom ease-out; }
@@ -352,7 +352,7 @@ header, section, footer {
   .nav a:last-child {
     margin-right: 0; }
   .nav a.current {
-    border: 2px solid #cccccc; }
+    border: 2px solid #dddddd; }
   .nav a:hover {
     border: 2px solid black; }
   .nav a:active {
@@ -497,9 +497,9 @@ header, section, footer {
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px);
-    -webkit-transition: 400ms all ease-out;
-    -moz-transition: 400ms all ease-out;
-    transition: 400ms all ease-out; }
+    -webkit-transition: 400ms all ease-out -250ms;
+    -moz-transition: 400ms all ease-out -250ms;
+    transition: 400ms all ease-out -250ms; }
 .show .info-button {
   background: url(../img/close.svg) no-repeat center center !important;
   background-size: 1rem 1rem !important;
@@ -519,7 +519,7 @@ footer .wrapper:before {
   display: block;
   height: 0;
   width: 100%;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #dddddd; }
 
 .footer-links {
   text-align: center; }

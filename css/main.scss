@@ -255,7 +255,7 @@ header, section, footer {
     @include transition($hover-speed opacity ease-out);
     h3, p {
       @include transform(translateX(0px));
-      @include transition($short-transition all ease-out);
+      @include transition($short-transition all ease-out -250ms);
     }
   }
   .info-button {
