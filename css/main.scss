@@ -113,12 +113,22 @@ header, section, footer {
   background-size: cover;
   height: 100%;
   position: relative;
-  display: table;
 }
+
+.top-photo .wrapper {
+  display: table;
+  height: 100%;
+}
+
+.center-vertical {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
 
 .project-hero {
   margin-right: 0;
-  margin-top: 30%;
   float: right;
 }
 
@@ -162,7 +172,6 @@ header, section, footer {
    .avatar {
     position: absolute;
     left: 0;
-    z-index:400;
   }
   .social-icons {
     position: absolute;

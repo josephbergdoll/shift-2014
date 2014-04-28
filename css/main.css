@@ -372,12 +372,18 @@ header, section, footer {
   background: url("../img/hero.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
-  position: relative;
-  display: table; }
+  position: relative; }
+
+.top-photo .wrapper {
+  display: table;
+  height: 100%; }
+
+.center-vertical {
+  display: table-cell;
+  vertical-align: middle; }
 
 .project-hero {
   margin-right: 0;
-  margin-top: 30%;
   float: right; }
 
 .project-hero h1 {
@@ -408,8 +414,7 @@ header, section, footer {
     margin: 0.5rem 0 0.75rem; }
   .person .avatar {
     position: absolute;
-    left: 0;
-    z-index: 400; }
+    left: 0; }
   .person .social-icons {
     position: absolute;
     left: 1.25rem;
