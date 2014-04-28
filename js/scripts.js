@@ -17,4 +17,8 @@ $(document).ready(function(){
     $(this).closest('.posters li').toggleClass('show');
   });
 
+  $('.avatar').click(function(){
+    $(this).closest('.social-contact').addClass('show-social');
+  });
+
 });
