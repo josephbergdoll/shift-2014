@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   $('.js-info-button').click(function(event){
     event.preventDefault();
-    $(this).next('.poster-info').toggleClass('show');
+    $(this).closest('.posters li').toggleClass('show');
   });
 
 });

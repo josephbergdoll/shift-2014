@@ -163,9 +163,6 @@ header, section, footer {
     position: absolute;
     left: 0;
   }
-  p {
-    font-size: 0.875em;
-  }
 }
 
 // Posters 
@@ -207,12 +204,26 @@ header, section, footer {
   .info-button {
     display: block;
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    @include transition($hover-speed opacity ease-out);
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/info.svg) no-repeat center center;
+    background-size: 1rem 1rem;
+    @include hide-text;
+    opacity: 0.25;
+    -webkit-transition: $hover-speed opacity ease-out, $hover-speed -webkit-transform ease-out;
+    -moz-transition: $hover-speed opacity ease-out, $hover-speed -moz-transform ease-out;
+    -o-transition: $hover-speed opacity ease-out, $hover-speed -o-transform ease-out;
+    transition: $hover-speed opacity ease-out, $hover-speed transform ease-out;
     z-index:100;
-    &:hover {
-      opacity: 0.75;
+  }
+  &:hover {
+    .info-button {
+      opacity: 0.45;
+      &:hover {
+        opacity: 0.75;
+      }
     }
   }
 }
@@ -224,19 +235,34 @@ header, section, footer {
   padding: 2rem 50% 2rem 2rem;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background: $gray-offwhite-opacity;
   opacity: 0;
   pointer-events: none;
   z-index: 3;
   @include transition($short-transition opacity ease-out);
+  h3, p {
+    @include transform(translateX(-10px));
+    @include transition($short-transition all ease-out);
+  }
 }
 
 .show {
-  opacity: 1 !important;
-  pointer-events: auto !important;
-  @include transition($hover-speed opacity ease-out);
+  .poster-info {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    @include transform(translateX(0));
+    @include transition($hover-speed opacity ease-out);
+    h3, p {
+      @include transform(translateX(0px));
+      @include transition($short-transition all ease-out);
+    }
+  }
+  .info-button {
+    background: url(../img/close.svg) no-repeat center center !important;
+    background-size: 1rem 1rem !important;
+    @include transform(rotate(90deg));
+  }
 }
 
 // Exhibition

@@ -7,3 +7,9 @@
 @mixin no-aa-text {
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
+@mixin hide-text {
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -67,7 +67,7 @@ table {
   background: #aaa;
   margin-right: 0.5rem;
   text-align: center;
-  font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Gotham SSm", "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.7em;
@@ -96,14 +96,14 @@ table {
     color: #222; }
 
 .nav a {
-  font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Gotham SSm", "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
 .project-caption, .footer-link {
-  font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Gotham SSm", "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 0.68rem;
   text-transform: uppercase;
@@ -123,13 +123,16 @@ h2 {
   font-size: 1.5em; }
 
 h3 {
-  font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Gotham SSm", "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 0.68em; }
   h3.subhead {
+    margin-top: 2.5rem;
     margin-bottom: 1.5rem; }
+    h3.subhead:first-child {
+      margin-top: 0; }
 
 p {
   font-family: "Adobe Caslon Pro", Georgia, serif;
@@ -140,9 +143,11 @@ p {
   margin-bottom: 1rem; }
   p:last-child {
     margin-bottom: 0; }
+  p.p-small {
+    font-size: 0.875em; }
 
 p a {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1.1px solid #cccccc;
   -webkit-transition: 200ms border-bottom ease-out;
   -moz-transition: 200ms border-bottom ease-out;
   transition: 200ms border-bottom ease-out; }
@@ -207,7 +212,7 @@ img {
 
 strong {
   font-weight: 700;
-  font-family: "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Gotham SSm", "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased; }
 
 em {
@@ -347,7 +352,7 @@ header, section, footer {
   .nav a:last-child {
     margin-right: 0; }
   .nav a.current {
-    border: 2px solid #dddddd; }
+    border: 2px solid #cccccc; }
   .nav a:hover {
     border: 2px solid black; }
   .nav a:active {
@@ -398,8 +403,6 @@ header, section, footer {
   .person .avatar {
     position: absolute;
     left: 0; }
-  .person p {
-    font-size: 0.875em; }
 
 .section-posters {
   background: #f9f9f9;
@@ -432,13 +435,24 @@ header, section, footer {
   .posters li .info-button {
     display: block;
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    -webkit-transition: 200ms opacity ease-out;
-    -moz-transition: 200ms opacity ease-out;
-    transition: 200ms opacity ease-out;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/info.svg) no-repeat center center;
+    background-size: 1rem 1rem;
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0.25;
+    -webkit-transition: 200ms opacity ease-out, 200ms -webkit-transform ease-out;
+    -moz-transition: 200ms opacity ease-out, 200ms -moz-transform ease-out;
+    -o-transition: 200ms opacity ease-out, 200ms -o-transform ease-out;
+    transition: 200ms opacity ease-out, 200ms transform ease-out;
     z-index: 100; }
-    .posters li .info-button:hover {
+  .posters li:hover .info-button {
+    opacity: 0.45; }
+    .posters li:hover .info-button:hover {
       opacity: 0.75; }
 
 .poster-info {
@@ -448,7 +462,6 @@ header, section, footer {
   padding: 2rem 50% 2rem 2rem;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background: rgba(249, 249, 249, 0.85);
   opacity: 0;
@@ -457,13 +470,44 @@ header, section, footer {
   -webkit-transition: 400ms opacity ease-out;
   -moz-transition: 400ms opacity ease-out;
   transition: 400ms opacity ease-out; }
+  .poster-info h3, .poster-info p {
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+    -webkit-transition: 400ms all ease-out;
+    -moz-transition: 400ms all ease-out;
+    transition: 400ms all ease-out; }
 
-.show {
+.show .poster-info {
   opacity: 1 !important;
   pointer-events: auto !important;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
   -webkit-transition: 200ms opacity ease-out;
   -moz-transition: 200ms opacity ease-out;
   transition: 200ms opacity ease-out; }
+  .show .poster-info h3, .show .poster-info p {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: 400ms all ease-out;
+    -moz-transition: 400ms all ease-out;
+    transition: 400ms all ease-out; }
+.show .info-button {
+  background: url(../img/close.svg) no-repeat center center !important;
+  background-size: 1rem 1rem !important;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 .exhibition-images img {
   margin-bottom: 1.5rem; }
@@ -475,7 +519,7 @@ footer .wrapper:before {
   display: block;
   height: 0;
   width: 100%;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #cccccc; }
 
 .footer-links {
   text-align: center; }
