@@ -408,8 +408,9 @@ header, section, footer {
     margin: 0.5rem 0 0.75rem; }
   .person .avatar {
     position: absolute;
-    left: 0; }
-  .person .social-contact {
+    left: 0;
+    z-index: 400; }
+  .person .social-icons {
     position: absolute;
     left: 1.25rem;
     top: 4.5rem;
@@ -418,25 +419,25 @@ header, section, footer {
     -webkit-transition: 400ms opacity ease-out;
     -moz-transition: 400ms opacity ease-out;
     transition: 400ms opacity ease-out; }
-    .person .social-contact.show-social {
-      pointer-events: auto;
-      opacity: 1; }
-    .person .social-contact a {
+    .person .social-icons a {
       display: block;
       text-indent: 120%;
       white-space: nowrap;
       overflow: hidden;
       width: 1.1rem;
       height: 1.1rem;
-      background-size: 1.1rem 1.1rem !important;
+      background-size: 1rem 1rem !important;
       -webkit-transition: 200ms opacity ease-out;
       -moz-transition: 200ms opacity ease-out;
       transition: 200ms opacity ease-out;
       opacity: 0.5; }
-      .person .social-contact a:hover {
+      .person .social-icons a:hover {
         opacity: 1; }
-      .person .social-contact a:first-child {
+      .person .social-icons a:first-child {
         margin-bottom: 0.33rem; }
+  .person:hover .social-icons {
+    pointer-events: auto;
+    opacity: 1; }
 
 .section-posters {
   background: #f9f9f9;

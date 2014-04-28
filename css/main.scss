@@ -162,24 +162,21 @@ header, section, footer {
    .avatar {
     position: absolute;
     left: 0;
+    z-index:400;
   }
-  .social-contact {
+  .social-icons {
     position: absolute;
     left: 1.25rem;
     top: 4.5rem;
     pointer-events: none;
     opacity: 0;
     @include transition($short-transition opacity ease-out);
-    &.show-social {
-      pointer-events: auto;
-      opacity: 1;
-    }
     a {
       display: block;
       @include hide-text;
       width: 1.1rem;
       height: 1.1rem;
-      background-size: 1.1rem 1.1rem !important;
+      background-size: 1rem 1rem !important;
       @include transition($hover-speed opacity ease-out);
       opacity: 0.5;
       &:hover {
@@ -190,8 +187,14 @@ header, section, footer {
       }
     }
   }
-}
 
+  &:hover {
+    .social-icons {
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+}
 // Posters 
 
 .section-posters {
