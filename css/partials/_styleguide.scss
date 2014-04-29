@@ -80,6 +80,7 @@ h3 {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 0.68em;
+  @extend %aa-text;
   &.subhead {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;

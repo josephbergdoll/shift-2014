@@ -400,6 +400,9 @@ header, section, footer {
 .buttons {
   margin-top: 2rem; }
 
+.long-form img {
+  margin: 3rem auto; }
+
 .right-grid-headline {
   margin-left: 52.41453%; }
 
