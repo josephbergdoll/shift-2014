@@ -18,6 +18,20 @@ $(document).ready(function(){
     $(this).closest('.posters li').toggleClass('show');
   });
 
+  $(window).scroll(function(){
+      if ($(window).scrollTop() > 1600) {
+          $('.js-to-top').addClass('show-to-top');
+      }
+      else {
+        $('.js-to-top').removeClass('show-to-top');
+      }
+  });
+
+  $('a.js-to-top').click(function(event){
+    event.preventDefault();
+    $(document.body).animate( {scrollTop : 0 }, 600);
+  });
+
 });
 
 $(window).load(function() {

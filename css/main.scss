@@ -14,6 +14,31 @@ header, section, footer {
   height: auto;
 }
 
+.to-top {
+  @extend %thin-gotham;
+  font-size: 0.65rem;
+  display: block;
+  position:fixed;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  background-color: black;
+  border: 3px solid black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  z-index: 3333;
+  @include transform(translateY(100%));
+  @include transition($hover-speed all ease-out);
+}
+
+.show-to-top {
+    @include transform(translateY(0));
+    &:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  }
+
 .wrapper {
   @include outer-container;
   width: 90%;

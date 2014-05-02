@@ -102,7 +102,7 @@ table {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-.project-caption, .footer-link {
+.project-caption, .to-top, .footer-link {
   font-family: "Gotham SSm", "Gotham", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 0.68rem;
@@ -249,6 +249,37 @@ a {
 header, section, footer {
   width: 100%;
   height: auto; }
+
+.to-top {
+  font-size: 0.65rem;
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  background-color: black;
+  border: 3px solid black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  z-index: 3333;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: 200ms all ease-out;
+  -moz-transition: 200ms all ease-out;
+  transition: 200ms all ease-out; }
+
+.show-to-top {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0); }
+  .show-to-top:hover {
+    background: rgba(0, 0, 0, 0.8); }
 
 .wrapper {
   *zoom: 1;
