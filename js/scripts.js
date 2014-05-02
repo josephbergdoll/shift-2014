@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
   $('.project-hero h1').waypoint(function(direction) {
@@ -15,6 +16,15 @@ $(document).ready(function(){
   $('.js-info-button').click(function(event){
     event.preventDefault();
     $(this).closest('.posters li').toggleClass('show');
+  });
+
+});
+
+$(window).load(function() {
+
+  $('.js-video-bg').delay(2500).queue(function(){
+    $(this).addClass('show-video');
+    $('#video-background')[0].play();
   });
 
 });
