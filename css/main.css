@@ -678,9 +678,6 @@ a.footer-link {
     width: 16.13676%; }
     .block-fifth:last-child {
       margin-right: 0; } }
-@media screen and (min-width: 1241px) and (max-width: 1430px) {
-  .project-hero {
-    width: 55%; } }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .wrapper {
     width: 90%;
