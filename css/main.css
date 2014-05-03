@@ -678,7 +678,10 @@ a.footer-link {
     width: 16.13676%; }
     .block-fifth:last-child {
       margin-right: 0; } }
-@media screen and (min-width: 1025px) and (max-width: 1500px) {
+@media screen and (min-width: 1241px) and (max-width: 1430px) {
+  .project-hero {
+    width: 55%; } }
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
   .wrapper {
     width: 90%;
     padding: 2rem 2rem; }
@@ -691,7 +694,7 @@ a.footer-link {
     width: 38.84972%; }
     .sub-info:last-child {
       margin-right: 0; } }
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 1441px) {
   .wrapper {
     width: 90%;
     padding: 3rem 2rem; }
