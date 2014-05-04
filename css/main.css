@@ -770,6 +770,9 @@ a.footer-link {
     .sub-info:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 1441px) {
+  .notablet {
+    display: block; }
+
   .wrapper {
     width: 90%;
     padding: 3rem 2rem; }
