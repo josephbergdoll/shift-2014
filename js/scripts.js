@@ -41,6 +41,6 @@ $(window).load(function() {
     $('#video-background')[0].play();
   });
 
-  $('.project-hero h1').fitText(1.6, { minFontSize: '16px', maxFontSize: '32px' });
+  //$('.project-hero h1').fitText(1.6, { minFontSize: '16px', maxFontSize: '32px' });
 
 });

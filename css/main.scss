@@ -20,29 +20,30 @@ header, section, footer {
   display: block;
   position:fixed;
   cursor: pointer;
-  padding: 1rem 1.25rem;
-  background-color: black;
-  border: 3px solid black;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0,0,0,0.25);
+  border: 2px solid rgba(0,0,0,0);
   color: white;
   text-align: center;
-  bottom: 0;
-  right: 0;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 3333;
-  @include transform(translateY(100%));
+  @include transform(translateY(160%));
   @include transition($hover-speed all ease-out);
 }
 
 .show-to-top {
     @include transform(translateY(0));
     &:hover {
-      background: rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.5);
+      border: 2px solid rgba(0,0,0,1);
     }
   }
 
 .wrapper {
   @include outer-container;
   width: 100%;
-  padding: 1rem 0.7rem;
+  padding: 2rem 0.7rem;
 }
 
 .logo {
@@ -116,7 +117,7 @@ header, section, footer {
 
 
 .top-photo {
-  width: 95%;
+  width: 100%;
   margin:0 auto;
   background: url('../img/hero.jpg') no-repeat center center;
   background-size: cover;
@@ -401,6 +402,23 @@ a.footer-link {
 
 @media screen and (max-width: 767px) {
 
+p {
+  font-size: 0.913rem;
+  line-height: 1.7;
+}
+
+.nomobile {
+  display: none;
+}
+
+.notablet {
+  display: none;
+}
+
+.nodesktop {
+  display: none;
+}
+
 .block-half {
   @include span-columns(12 of 12);
 }
@@ -417,11 +435,55 @@ a.footer-link {
   @include span-columns(12 of 12);
 }
 
+.project-hero {
+  width: 100%;
+  float: none !important;
+  text-align: center;
+  margin: 0 auto !important;
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.center-vertical {
+  vertical-align: bottom;
+}
+
+.button {
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.button-purchase {
+  width: 100%;
+}
+
+.button-hollow {
+  padding: 1rem;
+}
+
 }
 
 // Structure – iPad Up
 
 @media screen and (min-width: 768px) {
+
+.notablet {
+  display: none;
+}
+
+.nomobile {
+  display: block;
+}
+
+.nodesktop {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 2rem 2rem;
+}
 
 .block-half {
   @include span-columns(6);
@@ -441,14 +503,63 @@ a.footer-link {
 
 }
 
+// iPad Portrait
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.project-hero {
+  width: 85%;
+  float: none !important;
+  text-align: center;
+  margin: 0 auto !important;
+}
+
+.center-vertical {
+  vertical-align: bottom;
+}
+
+.button {
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.button-purchase {
+  width: 75%;
+}
+
+.button-hollow {
+  width: 37.5%;
+}
+
+}
+
+// Style – iPad Landscape Up
+
+@media screen and (min-width: 1024px) {
+
+.top-photo {
+  background: url('../img/hero.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+}
+
 
 // Structure – Laptop
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 
+.notablet {
+  display: block;
+}
+
+.top-photo {
+  width: 95%;
+}
+
 .wrapper {
   width: 90%;
-  padding: 2rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .sub-info {
