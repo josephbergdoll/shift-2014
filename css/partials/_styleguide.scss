@@ -1,5 +1,16 @@
+.hide-button-image {
+  position: absolute;
+}
+
+.buttons form {
+  display: inline-block;
+  &:first-child {
+    width: 50%;
+  }
+}
+
 .button {
-	display: inline-block;
+  display: inline-block;
 	padding: 1.25rem 3rem;
 	background: #aaa;
 	margin-right: 0.5rem;
@@ -7,6 +18,7 @@
 	font-family: $sans;
 	text-transform: uppercase;
 	font-weight: $bold;
+  cursor: pointer;
 	font-size: 0.7em;
 	@extend %aa-text;
 	letter-spacing: 0.1em;
@@ -14,7 +26,7 @@
 
 .button-purchase {
 	background: white;
-	width: 50%;
+	
 	border: 2px solid white;
 	@include transition($hover-speed all ease-out);
 	&:hover {
