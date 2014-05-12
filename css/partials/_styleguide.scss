@@ -1,13 +1,3 @@
-.hide-button-image {
-  position: absolute;
-}
-
-.buttons form {
-  display: inline-block;
-  &:first-child {
-    width: 50%;
-  }
-}
 
 .button {
   display: inline-block;
@@ -26,7 +16,7 @@
 
 .button-purchase {
 	background: white;
-	
+	width: 100%;
 	border: 2px solid white;
 	@include transition($hover-speed all ease-out);
 	&:hover {

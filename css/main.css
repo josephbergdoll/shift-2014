@@ -61,14 +61,6 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.hide-button-image {
-  position: absolute; }
-
-.buttons form {
-  display: inline-block; }
-  .buttons form:first-child {
-    width: 50%; }
-
 .button {
   display: inline-block;
   padding: 1.25rem 3rem;
@@ -84,6 +76,7 @@ table {
 
 .button-purchase {
   background: white;
+  width: 100%;
   border: 2px solid white;
   -webkit-transition: 200ms all ease-out;
   -moz-transition: 200ms all ease-out;
@@ -685,11 +678,15 @@ a.footer-link {
     display: block;
     margin: 0 auto 0.75rem; }
 
+  .buttons form {
+    display: block;
+    width: 100%; }
+
   .button-purchase {
     width: 100%; }
 
   .button-hollow {
-    padding: 1rem; } }
+    padding: 1rem 3rem; } }
 @media screen and (min-width: 768px) {
   .notablet {
     display: none; }
@@ -747,17 +744,25 @@ a.footer-link {
 
   .button {
     display: block;
+    margin: 0 auto; }
+
+  .buttons form {
+    display: block;
     margin: 0 auto 0.75rem; }
-
-  .button-purchase {
-    width: 75%; }
-
-  .button-hollow {
-    width: 37.5%; } }
+    .buttons form:first-child {
+      width: 75%; }
+    .buttons form:last-child {
+      width: 37.5%; } }
 @media screen and (min-width: 1024px) {
   .top-photo {
     background: url("../img/hero.jpg") no-repeat center center;
-    background-size: cover; } }
+    background-size: cover; }
+
+  .buttons form {
+    display: inline-block; }
+    .buttons form:first-child {
+      width: 50%;
+      margin-right: 0.35rem; } }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .notablet {
     display: block; }

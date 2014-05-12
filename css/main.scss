@@ -454,12 +454,17 @@ p {
   margin: 0 auto 0.75rem;
 }
 
+.buttons form {
+  display: block;
+  width: 100%;
+}
+
 .button-purchase {
   width: 100%;
 }
 
 .button-hollow {
-  padding: 1rem;
+  padding: 1rem 3rem;
 }
 
 }
@@ -520,15 +525,18 @@ p {
 
 .button {
   display: block;
+  margin:0 auto;
+}
+
+.buttons form {
+  display: block;
   margin: 0 auto 0.75rem;
-}
-
-.button-purchase {
-  width: 75%;
-}
-
-.button-hollow {
-  width: 37.5%;
+  &:first-child {
+    width: 75%;
+  }
+  &:last-child {
+    width: 37.5%;
+  }
 }
 
 }
@@ -540,6 +548,14 @@ p {
 .top-photo {
   background: url('../img/hero.jpg') no-repeat center center;
   background-size: cover;
+}
+
+.buttons form {
+  display: inline-block;
+  &:first-child {
+    width: 50%;
+    margin-right: 0.35rem;
+  }
 }
 
 }
